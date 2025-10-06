@@ -4,108 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Визитка Алинки</title>
+    <title>Визитка Алины</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Привет! Я — Алина</h1>
-        <p>Студентка 3 курса Будущий программист</p>
-    </header>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">Привет! Я — Алина</h1>
+            <p class="header__subtitle">Студентка 3 курса Будущий программист</p>
+        </header>
 
-    <main>
+        <main class="main">
+            <section class="section">
+                <h2 class="section__title">Обо мне</h2>
+                <div class="profile">
+                    <div class="profile__content">
+                        <p class="section__text">
+                            Я учусь на третьем курсе и совмещаю учёбу с активной жизнью.
+                            Каждый день — это новый вызов, и я стараюсь быть сильнее, чем вчера.
+                            Моя вторая "университетская аудитория" — это качалка!
+                        </p>
+                    </div>
+                    <img src="/фотохак.jpg" alt="Фото Алины" class="profile__image">
+                </div>
+            </section>
 
-        <section>
-            <h2>Обо мне</h2>
-            <p>
-                Я учусь на третьем курсе и совмещаю учёбу с активной жизнью.
-                Каждый день — это новый вызов, и я стараюсь быть сильнее, чем вчера.
-                Моя вторая "университетская аудитория" — это качалка!
-            </p>
-            <img src="/фотохак.jpg" alt="Фото Алины" width="200" height="300">
-        </section>
+            <section class="section">
+                <h2 class="section__title">Мои любимые фильмы</h2>
+                <ul class="list">
+                    <li class="list__item"><strong class="list__strong">«Боец»</strong> — вдохновляет на упорство</li>
+                    <li class="list__item"><strong class="list__strong">«Кингсман»</strong> — стиль, юмор и экшен</li>
+                    <li class="list__item"><strong class="list__strong">«Интерстеллар»</strong> — чтобы мечтать по-крупному</li>
+                    <li class="list__item"><strong class="list__strong">«Девушка с татуировкой дракона»</strong> — сильная героиня = мой идеал</li>
+                </ul>
+            </section>
 
+            <section class="section">
+                <h2 class="section__title">Любимые книги</h2>
+                <ol class="list list--ordered">
+                    <li class="list__item">«Атлант расправил плечи» — Айн Рэнд</li>
+                    <li class="list__item">«Привычка быть сильной» — Джен Синсеро</li>
+                    <li class="list__item">«451 градус по Фаренгейту» — Рэй Брэдбери</li>
+                    <li class="list__item">Конспекты по учёбе (они тоже читаются… иногда ночью!)</li>
+                </ol>
+            </section>
 
-        <section>
-            <h2>Мои любимые фильмы</h2>
-            <ul>
-                <li><strong>«Боец»</strong> — вдохновляет на упорство</li>
-                <li><strong>«Кингсман»</strong> — стиль, юмор и экшен</li>
-                <li><strong>«Интерстеллар»</strong> — чтобы мечтать по-крупному</li>
-                <li><strong>«Девушка с татуировкой дракона»</strong> — сильная героиня = мой идеал</li>
-            </ul>
-        </section>
+            <section class="section">
+                <h2 class="section__title">Мой фитнес-режим</h2>
+                <table class="table">
+                    <thead class="table__header">
+                        <tr class="table__row">
+                            <th class="table__cell">День недели</th>
+                            <th class="table__cell">Тренировка</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table__row">
+                            <td class="table__cell">Понедельник</td>
+                            <td class="table__cell">Ноги + кардио</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">Вторник</td>
+                            <td class="table__cell">Спина + пресс</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">Среда</td>
+                            <td class="table__cell">Отдых или лёгкая растяжка</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">Четверг</td>
+                            <td class="table__cell">Грудь + трицепс</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">Пятница</td>
+                            <td class="table__cell">Плечи + бицепс</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">Суббота</td>
+                            <td class="table__cell">Отдых и восстановление</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">Воскресенье</td>
+                            <td class="table__cell">Полный отдых</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-        <section>
-            <h2>Любимые книги</h2>
-            <ol>
-                <li>«Атлант расправил плечи» — Айн Рэнд</li>
-                <li>«Привычка быть сильной» — Джен Синсеро</li>
-                <li>«451 градус по Фаренгейту» — Рэй Брэдбери</li>
-                <li>Конспекты по учёбе (они тоже читаются… иногда ночью!)</li>
-            </ol>
-        </section>
+            <section class="section">
+                <h2 class="section__title">Моя мотивационная цитата</h2>
+                <blockquote class="quote">
+                    «Ты не видишь результатов? Продолжай. Ты ближе, чем думаешь.»
+                </blockquote>
+            </section>
 
-        <section>
-            <h2>Мой фитнес-режим</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>День недели</th>
-                        <th>Тренировка</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Понедельник</td>
-                        <td>Ноги + кардио</td>
-                    </tr>
-                    <tr>
-                        <td>Вторник</td>
-                        <td>Спина + пресс</td>
-                    </tr>
-                    <tr>
-                        <td>Среда</td>
-                        <td>Отдых или лёгкая растяжка</td>
-                    </tr>
-                    <tr>
-                        <td>Четверг</td>
-                        <td>Грудь + трицепс</td>
-                    </tr>
-                    <tr>
-                        <td>Пятница</td>
-                        <td>Плечи + бицепс</td>
-                    </tr>
-                    <tr>
-                        <td>Суббота</td>
-                        <td>Отдых и восстановление</td>
-                    </tr>
-                    <tr>
-                        <td>Воскресенье</td>
-                        <td>Полный отдых</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <section class="section">
+                <h2 class="section__title">Свяжитесь со мной</h2>
+                <p class="section__text">Пишите в <a href="@alliinka4" class="link">ТГ</a> - делюсь прогрессом и мотивацией!</p>
+            </section>
+        </main>
 
-        <section>
-            <h2>Моя мотивационная цитата</h2>
-            <blockquote>
-                «Ты не видишь результатов? Продолжай. Ты ближе, чем думаешь.»
-            </blockquote>
-        </section>
-
-        <section>
-            <h2>Свяжитесь со мной</h2>
-            <p>Пишите в <a href="@alliinka4">ТГ</a> - делюсь прогрессом и мотивацией!</p>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Алина. Сила — в движении!</p>
-    </footer>
-
+        <footer class="footer">
+            <p class="footer__text">&copy; 2024 Алина. Сила — в движении!</p>
+        </footer>
+    </div>
 </body>
 
 </html>
